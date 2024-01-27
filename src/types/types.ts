@@ -2,6 +2,12 @@ import React, {ChangeEvent, MouseEventHandler} from 'react';
 
 export type Colors = 'purple' | 'blue' | 'pink' | 'green' | 'yellow' | 'white' | 'emoji' | string | undefined;
 
+export interface IconProps {
+    name: string,
+    width?: number,
+    height?: number
+}
+
 export interface ButtonProps {
     link?: boolean,
     href?: string,
