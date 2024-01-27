@@ -8,6 +8,11 @@
     flex-grow: 1;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
 .container {
     width: 100%;
     max-width: var(--container-width);

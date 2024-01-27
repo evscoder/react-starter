@@ -4,7 +4,7 @@ const Footer: FC = () => {
     return (
         <footer className={s.footer}>
             <p className={s.credit}>
-                <a href="https://evscoder.github.io/about.html" target={'_blank'}>Обо мне</a>
+                <a href="https://evscoder.github.io/about.html" target={'_blank'}>© 2024 by Evgeny Staroverov</a>
             </p>
         </footer>
     );
