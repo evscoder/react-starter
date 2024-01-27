@@ -2,6 +2,10 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+[Presentation](https://evscoder.github.io/react-starter/)
+[Coverage](https://evscoder.github.io/react-starter/coverage/lcov-report/index.html). </br>
+[Chromatic (Storybook)](https://evscoder.github.io/react-starter/storybook/index.html). </br>
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
