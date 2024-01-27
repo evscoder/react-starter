@@ -2,7 +2,7 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-[Presentation](https://evscoder.github.io/react-starter/)
+[Presentation](https://evscoder.github.io/react-starter/)</br>
 [Coverage](https://evscoder.github.io/react-starter/coverage/lcov-report/index.html). </br>
 [Chromatic (Storybook)](https://evscoder.github.io/react-starter/storybook/index.html). </br>
 
