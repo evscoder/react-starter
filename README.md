@@ -1,4 +1,4 @@
-# React + TypeScript + Vite + Storybook + Jest
+# React + TypeScript + Redux Toolkit + Testing library + Vite + Storybook
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
