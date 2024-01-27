@@ -8,7 +8,7 @@ const Auth = () => {
     return (
         <div className={s.auth}>
             <h1>React Starter</h1>
-            <Button color={'primary'}>
+            <Button color={'primary'} id={'authBtn'}>
                 Deploy
             </Button>
         </div>
