@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1706354738379" clover="3.2.0">
-  <project timestamp="1706354738379" name="All files">
-    <metrics statements="31" coveredstatements="29" conditionals="7" coveredconditionals="4" methods="6" coveredmethods="6" elements="44" coveredelements="39" complexity="0" loc="31" ncloc="31" packages="3" files="3" classes="3"/>
+<coverage generated="1706364336088" clover="3.2.0">
+  <project timestamp="1706364336088" name="All files">
+    <metrics statements="42" coveredstatements="40" conditionals="7" coveredconditionals="4" methods="8" coveredmethods="8" elements="57" coveredelements="52" complexity="0" loc="42" ncloc="42" packages="5" files="5" classes="5"/>
     <package name="components.container.Auth">
-      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="Auth.tsx" path="/home/runner/work/react-starter/react-starter/src/components/container/Auth/Auth.tsx">
-        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.layout.Footer">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Footer.tsx" path="/home/runner/work/react-starter/react-starter/src/components/layout/Footer/Footer.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.layout.Header">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Header.tsx" path="/home/runner/work/react-starter/react-starter/src/components/layout/Header/Header.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
       </file>
     </package>
     <package name="components.ui.Button">
