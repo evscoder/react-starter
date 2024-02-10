@@ -1,7 +1,7 @@
 import s from './Header.module.scss';
 import {FC} from 'react';
 import Icon from '../../ui/Icon/Icon';
-import imagePath from "../../../helper/imagePath";
+import imagePath from '../../../helper/imagePath';
 const Header: FC = () => {
     return (
         <div className={s.pageHeader}>
