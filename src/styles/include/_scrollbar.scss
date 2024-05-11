@@ -1,0 +1,23 @@
+.simplebar-scrollbar:before {
+  position: absolute;
+  content: "";
+  background: var(--primary-color);
+  border-radius: 7px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+
+  .scrollbar-thin & {
+    right: 2px;
+  }
+}
+
+.simplebar-track .simplebar-scrollbar.simplebar-visible:before {
+  opacity: 0.2;
+  transition: opacity 0s linear;
+
+  .scrollbar-thin & {
+    opacity: 1;
+  }
+}

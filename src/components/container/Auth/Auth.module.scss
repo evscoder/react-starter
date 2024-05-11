@@ -1,0 +1,17 @@
+.auth {
+  flex-grow: 1;
+  display: grid;
+
+  &__container {
+    grid-template-rows: auto 1fr auto;
+  }
+
+  &__center {
+    display: grid;
+    place-content: center;
+  }
+
+  &__submit {
+    min-width: 300px;
+  }
+}
