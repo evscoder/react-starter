@@ -3,6 +3,7 @@ import s from './UiModal.module.scss';
 import cn from 'clsx';
 import SimpleBar from 'simplebar-react';
 import Icon from '../Icon/Icon';
+import {createPortal} from "react-dom";
 
 interface Props {
     isShow: boolean,
@@ -30,37 +31,40 @@ const UiModal: FC<Props> = ({ isShow, content, title, footer, classNames, setClo
     }, [isShow]);
 
     return (
-        <SimpleBar className={cn(s.modal, active && s[`is-active`], animate && s[`is-animate`], classNames)}>
-            <div className={s.modal__overlay} onClick={setClose}></div>
-            <div className={s.modal__wrap}>
-                <div className={s.modal__window}>
-                    <div className={s.modal__content}>
-                        <button className={s.modal__close} onClick={setClose}>
-                            <Icon name={'icon-cross'} />
-                        </button>
-                        {title &&
-                            <div className={s.modal__header}>
-                                <h3 className={s.modal__title}>{title}</h3>
-                            </div>
-                        }
-                        {content &&
-                            <div className={s.modal__body}>
-                                <div className={s.modal__container}>
-                                    { content }
+        createPortal(
+            <SimpleBar className={cn(s.modal, active && s[`is-active`], animate && s[`is-animate`], classNames)}>
+                <div className={s.modal__overlay} onClick={setClose}></div>
+                <div className={s.modal__wrap}>
+                    <div className={s.modal__window}>
+                        <div className={s.modal__content}>
+                            <button className={s.modal__close} onClick={setClose}>
+                                <Icon name={'icon-cross'} />
+                            </button>
+                            {title &&
+                                <div className={s.modal__header}>
+                                    <h3 className={s.modal__title}>{title}</h3>
                                 </div>
-                            </div>
-                        }
-                        {footer &&
-                            <div className={s.modal__footer}>
-                                <div className={s.modal__container}>
-                                    { footer }
+                            }
+                            {content &&
+                                <div className={s.modal__body}>
+                                    <div className={s.modal__container}>
+                                        { content }
+                                    </div>
                                 </div>
-                            </div>
-                        }
+                            }
+                            {footer &&
+                                <div className={s.modal__footer}>
+                                    <div className={s.modal__container}>
+                                        { footer }
+                                    </div>
+                                </div>
+                            }
+                        </div>
                     </div>
                 </div>
-            </div>
-        </SimpleBar>
+            </SimpleBar>,
+            document.getElementById('root') as HTMLDivElement
+        )
     );
 };
 
