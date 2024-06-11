@@ -3,7 +3,7 @@ import s from './UiModal.module.scss';
 import cn from 'clsx';
 import SimpleBar from 'simplebar-react';
 import Icon from '../Icon/Icon';
-import {createPortal} from "react-dom";
+import {createPortal} from 'react-dom';
 
 interface Props {
     isShow: boolean,
