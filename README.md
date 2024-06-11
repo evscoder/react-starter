@@ -4,7 +4,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 [Presentation](https://react-starter-blond.vercel.app/)</br>
 [Coverage](https://react-starter-blond.vercel.app/coverage/lcov-report/index.html). </br>
-[Chromatic (Storybook)](https://react-starter-blond.vercel.app/react-starter/storybook/index.html). </br>
+[Chromatic (Storybook)](https://react-starter-blond.vercel.app/storybook/index.html). </br>
 
 Currently, two official plugins are available:
 
