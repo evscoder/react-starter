@@ -2,9 +2,9 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-[Presentation](https://react-starter-blond.vercel.app/)</br>
-[Coverage](https://react-starter-blond.vercel.app/coverage/lcov-report/index.html). </br>
-[Chromatic (Storybook)](https://react-starter-blond.vercel.app/storybook/index.html). </br>
+[Presentation](https://react-starter-delta-one.vercel.app)</br>
+[Coverage](https://react-starter-delta-one.vercel.app/coverage/lcov-report/index.html). </br>
+[Chromatic (Storybook)](https://react-starter-delta-one.vercel.app/storybook/index.html). </br>
 
 Currently, two official plugins are available:
 
