@@ -4,7 +4,7 @@ const Footer: FC = () => {
     return (
         <footer className={s.footer}>
             <p className={s.credit}>
-                <a href="https://evscoder.pro/about.html" target={'_blank'}>© 2024 by Evgeny Staroverov</a>
+                <a href="https://evstdev.vercel.app/about.html" target={'_blank'}>© 2024 by Evgeny Staroverov</a>
             </p>
         </footer>
     );
