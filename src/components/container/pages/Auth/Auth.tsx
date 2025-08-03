@@ -6,7 +6,7 @@ import cn from 'clsx';
 import {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {AppDispatch, RootState} from '../../../../store.tsx';
-import {getRequestData} from '../../../../models/api/data/getData.tsx';
+import {getRequestData} from '../../../../modules/api/data/getData.tsx';
 import UiButton from '../../../ui/Button/UiButton.tsx';
 import UiModal from '../../../ui/Modal/UiModal.tsx';
 

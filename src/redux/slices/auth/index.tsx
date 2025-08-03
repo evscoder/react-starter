@@ -1,13 +1,10 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {getRequestData} from '../models/api/data/getData';
-import isError from '../helper/isError';
+import isError from '../../../helper/isError.ts';
+import { getAuthData } from '../../../modules/api/auth';
+import { IAuthState } from '../../../models/auth';
 
-export type DataProps = {
-    title: string
-}
-
-type Props = {
-    data: DataProps
+interface Props {
+    data: IAuthState
     loading: boolean | null
     error: string
 }
@@ -20,7 +17,7 @@ const initialState: Props = {
     error: ''
 };
 
-const slice = createSlice({
+const index = createSlice({
     name: 'slice',
     initialState: initialState,
     reducers: {
@@ -30,11 +27,11 @@ const slice = createSlice({
     },
     extraReducers: builder => {
         builder
-            .addCase(getRequestData.pending, (state) => {
+            .addCase(getAuthData.pending, (state) => {
                 state.loading = true;
                 state.error = '';
             })
-            .addCase(getRequestData.fulfilled, (state, action) => {
+            .addCase(getAuthData.fulfilled, (state, action) => {
                 state.loading = false;
                 state.data = action.payload;
             })
@@ -47,6 +44,6 @@ const slice = createSlice({
 
 export const {
     sliceAction
-} = slice.actions;
+} = index.actions;
 
-export default slice.reducer;
+export default index.reducer;
