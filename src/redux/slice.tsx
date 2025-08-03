@@ -1,5 +1,5 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {getRequestData} from '../api/data/getData';
+import {getRequestData} from '../models/api/data/getData';
 import isError from '../helper/isError';
 
 export type DataProps = {

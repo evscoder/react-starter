@@ -1,6 +1,6 @@
 import {createAsyncThunk} from '@reduxjs/toolkit';
 import axios from 'axios';
-import {paths} from '../../root/paths';
+import {paths} from '../../../root/paths.ts';
 
 const getRequestData = createAsyncThunk('slice/getData', async (_, { rejectWithValue }) => {
     try {

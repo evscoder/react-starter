@@ -1,4 +1,4 @@
-import Auth from '../../container/Auth/Auth';
+import Auth from '../../components/container/pages/Auth/Auth.tsx';
 
 const AuthPage = () => {
     return (
