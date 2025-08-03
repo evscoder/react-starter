@@ -1,17 +1,16 @@
 FROM node:20-alpine
 
-WORKDIR /var/www
-ENV APP_PORT=3000
+# Устанавливаем переменные окружения
 ENV NODE_ENV=production
+ENV APP_PORT=4200
 
-# Устанавливаем рабочую директорию
-WORKDIR $APP_DIR
+WORKDIR /app
 
-# Копируем package.json и устанавливаем зависимости
+# Копируем зависимости
 COPY package*.json ./
 RUN npm ci
 
-# Затем копируем весь проект
+# Копируем всё остальное
 COPY . .
 
 # Копируем и делаем исполняемым скрипт запуска

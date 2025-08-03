@@ -7,9 +7,9 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - "${VITE_PORT:-4200}:4200"
     volumes:
-      - ./:/var/www
-    environment:
-      - NODE_ENV=development
-      - APP_PORT=3000
+      - .:/app
+      - /app/node_modules
+    env_file:
+      - .env

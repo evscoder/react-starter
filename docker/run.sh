@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /var/www
+cd /app
 
 if [ "$NODE_ENV" = "production" ]; then
   echo "BUILD PRODUCTION"

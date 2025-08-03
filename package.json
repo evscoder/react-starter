@@ -7,7 +7,7 @@
     "node": "18.16.0"
   },
   "scripts": {
-    "start": "vite --port 3000 --host",
+    "start": "vite",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --fix --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
