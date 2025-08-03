@@ -1,11 +1,11 @@
 import './styles/app.scss';
 import 'simplebar-react/dist/simplebar.min.css';
-import Router from './components/routes/Router';
+import Routing from './routing';
 
 function App() {
   return (
     <div className={'page-wrapper'}>
-      <Router />
+      <Routing />
     </div>
   );
 }

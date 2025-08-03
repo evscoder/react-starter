@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: my-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/var/www
+    environment:
+      - NODE_ENV=development
+      - APP_PORT=3000

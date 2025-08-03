@@ -3,7 +3,7 @@ import App from './App.tsx';
 import { Provider } from 'react-redux';
 import {BrowserRouter} from 'react-router-dom';
 import {store} from './store';
-import {paths} from './root/paths';
+import { paths } from './modules/api/root.ts';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <BrowserRouter basename={paths.basename}>

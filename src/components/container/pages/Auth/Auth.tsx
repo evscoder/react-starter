@@ -6,9 +6,9 @@ import cn from 'clsx';
 import {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {AppDispatch, RootState} from '../../../../store.tsx';
-import {getRequestData} from '../../../../modules/api/data/getData.tsx';
 import UiButton from '../../../ui/Button/UiButton.tsx';
 import UiModal from '../../../ui/Modal/UiModal.tsx';
+import { getAuthData } from '../../../../modules/api/auth';
 
 const Auth = () => {
     const { loading } = useSelector((state: RootState) => state.slice);
@@ -26,7 +26,7 @@ const Auth = () => {
     useTitle('Auth Page');
 
     useEffect(() => {
-        dispatch(getRequestData());
+        dispatch(getAuthData());
     }, [dispatch]);
 
     return (
